@@ -1,0 +1,11 @@
+{
+  "name": "rt",
+  "private": "true",
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
+  },
+  "dependencies": {
+    "dwv": "^0.35.1",
+    "esbuild": "^0.18.6"
+  }
+}
