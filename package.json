@@ -5,6 +5,7 @@
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
   },
   "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
     "dwv": "^0.35.1",
     "esbuild": "^0.18.6"
   }

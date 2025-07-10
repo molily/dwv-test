@@ -1,5 +1,14 @@
 <h1>index</h1>
 
-<div id="dwv">
-  <div id="layerGroup0"></div>
+<div data-controller="dicom">
+  <div class="dicom-wrapper" data-controller="dicom" data-dicom-url-value="https://raw.githubusercontent.com/ivmartel/dwv/master/tests/data/bbmri-53323851.dcm">
+  <div class="dicom-toolbar">
+    <button data-action="dicom#setTool" data-tool-name="Scroll">Scroll</button>
+    <button data-action="dicom#setTool" data-tool-name="ZoomAndPan">ZoomAndPan</button>
+    <button data-action="dicom#setTool" data-tool-name="WindowLevel">WindowLevel</button>
+    <button data-action="dicom#one">1 Ansicht</button>
+    <button data-action="dicom#side">Side-by-side</button>
+    <button data-action="dicom#mpr">MPR</button>
+  </div>
+  <div class="dicom-canvas-container" id="dwv_canvas_container" style="width:512px; height:512px;"></div>
 </div>
